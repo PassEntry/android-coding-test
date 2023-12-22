@@ -31,17 +31,16 @@ This page should only be accessible to authenticated users. It should display th
 
 ## Mock API
 
-We've included a mock HTTP API for you to integrate the application with.
-This section contains the instructions on how to run the API on your machine, as well as the documentation of the endpoints.
-
-Please integrate with the API as is - we do not expect you to make any changes to the API itself.
+We've included a mock HTTP API for you to integrate the application with. Please integrate with the API as is - we do not expect you to make any changes to the API itself.
 
 ### Valid user credentials
 
-The API has been pre-configured to accept only one username and password:
+The API has been pre-configured to accept **only one username and password**:
 
 - username: hello@passentry.com
 - password: securepass
+
+Sending these to the `/login` endpoint should result in success. Any other credentials will be rejected as invalid.
 
 ### How to run the mock HTTP API
 
@@ -83,7 +82,7 @@ Authenticate a user and generate an API token.
 
 #### Success Response
 
-If the correct credentials are given, the response body contains an API token to
+If the correct credentials are given (see above), the response body contains an API token to
 be used with the `/taps` endpoint (described further below).
 
 - Status Code: `200 OK`
@@ -159,3 +158,7 @@ If authorization token in the request is missing or invalid, no data is returned
   "error": "Unauthorized"
 }
 ```
+
+## Questions?
+
+If you have any questions about this task, you can email us at jobs@passentry.com
