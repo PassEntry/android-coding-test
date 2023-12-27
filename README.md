@@ -20,11 +20,6 @@ The login page should accept a username and password. When submitted,
 the application should validate these credentials against the `/login` endpoint
 of the mock API (documented below).
 
-#### Home page
-
-This page should only be accessible to authenticated users. The login page
-should display the username of the authenticated user.
-
 #### Tap history page
 
 This page should only be accessible to authenticated users. It should display the list of pass taps which can be retrieved from the `/taps` endpoint of the mock API (documented below).
